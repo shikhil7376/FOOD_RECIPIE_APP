@@ -44,14 +44,14 @@ export default function FilteredDishes({}) {
 
     // console.log("propsData",props.allMenuCategories);
     // console.log("All menus",props.allMenus);
-    console.log("singleDish",props.singleDish);
+   
 
    
 
 // lets show only single dishes
 
     let maxItem = 4
-     let singleDishItems = props.singleDish.map((item,index)=>{
+     let singleDishItems = singleDish.map((item,index)=>{
       if(index<maxItem){
         return(
           <li>
@@ -68,7 +68,7 @@ export default function FilteredDishes({}) {
 
  // show dishes on click
     function showFilterdDishesHandler(category){
-      props.setSingleDish([])
+      setSingleDish([])
       setActiveDish(category)
         let filteredDishesAre = allMenus.filter((item)=>{
                 return item.strCategory === category
@@ -82,7 +82,7 @@ export default function FilteredDishes({}) {
     
 
     // show all the categories
-let allCategories = props.allMenuCategories.map((item)=>{
+let allCategories = menuCategory.map((item)=>{
     return(
         <li className={item.strCategory ==activeDish?"active":""} onClick={()=>{showFilterdDishesHandler(item.strCategory)}}>{item.strCategory}</li>
     )
