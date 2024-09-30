@@ -15,7 +15,7 @@ export default function Menus() {
 
 
   return (
-<div>
+<div className='bg-black h-auto overflow-hidden'>
     <Header/>
     <Hero/>
     <AllMenus>

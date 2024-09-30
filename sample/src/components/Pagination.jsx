@@ -21,7 +21,7 @@ let pages = numberOfPages.map((pageNumber)=>{
 })
 
   return (
-    <ul className='pagination flex'>
+    <ul className='pagination flex '>
        {pages}
     </ul>
   )

@@ -2,17 +2,17 @@ import React from 'react'
 
 export default function Header() {
   return (
-      <header>
+      <header className='bg-black opacity-45 fixed'>
            <a href=''>
-              Food Bae
+             
            </a>
            <nav>
             <ul className='flex'>
               <li>
-                <a href=''>Home</a>
+                <a className='font-semibold' href=''>Home</a>
               </li>
               <li>
-                <a href=''>Checkout</a>
+                <a href='font-semibold '>Checkout</a>
               </li>
             </ul>
            </nav>

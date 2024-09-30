@@ -42,8 +42,7 @@ export default function FilteredDishes({}) {
 
 
 
-    // console.log("propsData",props.allMenuCategories);
-    // console.log("All menus",props.allMenus);
+  
    
 
    
@@ -92,8 +91,8 @@ let allCategories = menuCategory.map((item)=>{
     <div className='filtred-dishes'>
       <div className='container'>
         <div className='text-center'>
-        <h2>Choose your dishes </h2>
-        <p>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content</p>
+        <h2 className='text-gray-400 text-3xl font-bold'>Choose your dishes </h2>
+        <p className='text-gray-400'>In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content</p>
         </div>
         <div className='filterd-dishes'>
            <ul>

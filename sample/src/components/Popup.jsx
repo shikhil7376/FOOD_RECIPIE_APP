@@ -17,11 +17,14 @@ export default function Popup({closePopup,currentDish,allDishes}) {
            <h2>{item.strMeal}</h2>
            <p>{item.strInstructions}</p>
            <ul className='dish-ingredient flex'>
+
             <li>{item.strIngredient1}</li>
             <li>{item.strIngredient2}</li>
             <li>{item.strIngredient3}</li>
             <li>{item.strIngredient4}</li>
            </ul>
+           <button>Order Now</button>
+           <h5 className='popup-close' onClick={closePopup}>Close</h5>
       </div>
     )
   })
@@ -29,8 +32,7 @@ export default function Popup({closePopup,currentDish,allDishes}) {
     <div className='popup'>
         <div className='popup-content'>
             {dishDetails}
-           <button>Order Now</button>
-           <h5 className='popup-close' onClick={closePopup}>Close</h5>
+        
         </div>
     </div>
   )
